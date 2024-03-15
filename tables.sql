@@ -19,7 +19,9 @@ CREATE TABLE IF NOT EXISTS Meets(
 	"state" VARCHAR(50),
 	meet_country VARCHAR(50),
 	meet_state VARCHAR(50),
-	tested BOOL
+    meet_town VARCHAR(55),
+	tested BOOL,
+    name VARCHAR(255)
 );
 
 CREATE TYPE valid_equipment AS ENUM('Raw', 'Wraps', 'Multi-ply', 'Single-ply', 'Unlimited', 'Straps');
